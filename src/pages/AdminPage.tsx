@@ -74,7 +74,7 @@ const AdminPage: React.FC = () => {
             </button>
             <Link to="/admin/dashboard" className="flex items-center space-x-2">
               <Car size={24} className="text-accent-600" />
-              <span className="text-lg font-bold text-primary-900">AutoPrestige Admin</span>
+              <span className="text-lg font-bold text-primary-900">Sony's Auto Admin</span>
             </Link>
           </div>
           <Button 
@@ -147,7 +147,7 @@ const AdminPage: React.FC = () => {
                 <div className="flex items-center justify-between mb-6">
                   <Link to="/admin/dashboard" className="flex items-center space-x-2">
                     <Car size={24} className="text-accent-600" />
-                    <span className="text-lg font-bold text-primary-900">AutoPrestige</span>
+                    <span className="text-lg font-bold text-primary-900">Sony's Auto</span>
                   </Link>
                   <button
                     className="text-primary-800"

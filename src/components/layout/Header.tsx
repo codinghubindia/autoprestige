@@ -46,7 +46,6 @@ const Header: React.FC = () => {
     { name: 'Contact', path: '/contact' },
   ];
   
-  const selectedLocationObj = locations.find(loc => loc.name === selectedLocation);
   
   return (
     <header className={headerClasses}>
@@ -54,7 +53,7 @@ const Header: React.FC = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <CarFront size={32} className="text-accent-600" />
-          <span className="text-xl font-bold text-primary-900">AutoPrestige</span>
+          <span className="text-xl font-bold text-primary-900">Sony's Auto</span>
         </Link>
         
         {/* Desktop Navigation */}

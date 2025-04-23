@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center space-x-2">
               <CarFront size={32} className="text-accent-400" />
-              <span className="text-xl font-bold text-white">AutoPrestige</span>
+              <span className="text-xl font-bold text-white">Sony's Auto</span>
             </Link>
             <p className="mt-4 text-primary-300 text-sm">
               Premium dealership for luxury and performance vehicles. 
@@ -107,7 +107,7 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Mail size={18} className="text-primary-300 mt-0.5 mr-2 flex-shrink-0" />
                 <span className="text-primary-300 text-sm">
-                  info@autoprestige.com
+                  info@sonysauto.com
                 </span>
               </li>
               <li className="flex items-start">
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
         {/* Footer Bottom - Copyright */}
         <div className="pt-6 border-t border-primary-800 text-center sm:flex sm:justify-between sm:text-left">
           <p className="text-primary-400 text-sm">
-            &copy; {currentYear} AutoPrestige. All rights reserved.
+            &copy; {currentYear} Sony's Auto. All rights reserved.
           </p>
           <div className="mt-2 sm:mt-0 text-sm text-primary-400 space-x-4">
             <a href="#" className="hover:text-primary-300 transition-colors">

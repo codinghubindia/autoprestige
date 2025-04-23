@@ -64,7 +64,7 @@ const AdminLogin: React.FC = () => {
                 <Car size={32} className="text-white" />
               </div>
             </div>
-            <h1 className="text-2xl font-bold text-white mb-2">AutoPrestige Admin</h1>
+            <h1 className="text-2xl font-bold text-white mb-2">Sony's Auto Admin</h1>
             <p className="text-primary-200">
               Sign in to access the administration dashboard
             </p>
@@ -89,7 +89,7 @@ const AdminLogin: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="form-input"
-                  placeholder="admin@autoprestige.com"
+                  placeholder="admin@sonysauto.com"
                   required
                 />
               </div>
@@ -141,7 +141,7 @@ const AdminLogin: React.FC = () => {
               <div className="space-y-1 text-sm text-primary-600">
                 <div className="flex justify-between items-center">
                   <span>Email:</span>
-                  <code className="bg-white px-2 py-1 rounded">admin@autoprestige.com</code>
+                  <code className="bg-white px-2 py-1 rounded">admin@sonysauto.com</code>
                 </div>
                 <div className="flex justify-between items-center">
                   <span>Password:</span>

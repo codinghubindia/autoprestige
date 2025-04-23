@@ -12,7 +12,7 @@ interface AuthState {
 const mockUser: User = {
   id: '1',
   name: 'Admin User',
-  email: 'admin@autoprestige.com',
+  email: 'admin@sonysauto.com',
   role: 'admin',
   token: 'mock-jwt-token',
 };
@@ -25,7 +25,7 @@ const useAuthStore = create<AuthState>()(
       
       login: async (email: string, password: string) => {
         // Mock login - in a real app this would call an API
-        if (email === 'admin@autoprestige.com' && password === 'password') {
+        if (email === 'admin@sonysauto.com' && password === 'password') {
           set({ user: mockUser, isAuthenticated: true });
           return true;
         }
