@@ -1,14 +1,12 @@
-name: Deploy to GitHub Pages
+name: Deploy to Deployment Branch
 
 on:
   push:
     branches:
-      - main # or 'master' depending on your branch
+      - main # or your default branch
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write  # important: allow pushes to other branches
 
 jobs:
   build-and-deploy:
@@ -29,8 +27,12 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Check dist folder
+        run: ls -la dist
+
+      - name: Deploy to custom branch
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: deployment  # changed from gh-pages
